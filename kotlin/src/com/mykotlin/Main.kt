@@ -1,4 +1,4 @@
-package com.kotlin
+package com.mykotlin
 
 fun main() {
 	println("Hello world")
