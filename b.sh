@@ -24,7 +24,7 @@ do
 		;;
 
 		PHP)
-			echo $i
+			pho/b.sh
 		;;
 
 		Python)
