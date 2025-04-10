@@ -1,21 +1,28 @@
 #!/bin/bash
 
 main() {
-echo "Run A Program"
-echo
-select i in C C++ Java Kotlin PHP Python Exit
-do
-case $i in
-C) echo C;;
-C++) echo C++;;
-Java) echo Java;;
-Kotlin) echo Kotlin;;
-PHP) echo PHP;;
-Python) echo Python;;
-Exit) echo Cancel;;
-*) echo "Invalid option";;
-esac
-done
+    echo
+    echo "Run A Program"
+    echo
+    select i in C C++ Java Kotlin PHP Python Exit
+    do
+        echo
+        case $i in
+            C) 
+            echo C
+            exit
+            ;;
+            C++) 
+            echo C++;;
+            Java) echo Java;;
+            Kotlin) echo Kotlin;;
+            PHP) echo PHP;;
+            Python) echo Python;;
+            Exit) exit;;
+            *) main;;
+        esac
+        echo
+    done
 }
 main
 exit
