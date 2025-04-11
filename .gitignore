@@ -1,9 +1,6 @@
-clang/capp
-
-cpp/cppapp
-
-*/classes
 */app.jar
 */app
+*/classes
+*/.venv
 
-python/.venv
+*.xlsx

@@ -1,16 +1,13 @@
 import pandas as pd
 import re
+import json
 from pydantic import BaseModel
-
-print("Hello world")
 
 class Item(BaseModel):
     name: str
     cost: int
     qty: int
     price: int
-    cpu: float
-    profit: float
 
 def csv_to_list(data):
     obj = []
@@ -18,23 +15,27 @@ def csv_to_list(data):
     header = rows[0].split(",")
     for row in rows[1:]:
         it = row.split(",")
-        h = 0
+        position = 0
         item = {}
         if it[0] == '':
             continue
-        for v in row.split(","):
-            val = v
+        for v in it:
+            key = header[position]
+            val = v.strip()
+            if key == 'cpu' or key == 'profit':
+                position+=1
+                continue
             if re.match(r"^-?\d+\.0$", val):
                 val = int(float(val))
             elif re.match(r"^-?\d+\.\d+$", val):
                 val = float(val)
-            item[header[h]] =  val
-            h+= 1
-        obj.append(Item(**item))
+            item[key] =  val
+            position+= 1
+        obj.append(item)
     return obj
 
 try:
-    table = pd.read_excel("./Table.xlsx", sheet_name="Sheet1")
-    print(csv_to_list(table.to_csv(index=False)))
+    table = pd.read_excel("./python/Table.xlsx", sheet_name="Sheet1")
+    print(json.dumps(csv_to_list(table.to_csv(index=False))))
 except Exception as e:
     print(f"Error reading the Excel file: {e}")
