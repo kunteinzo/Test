@@ -1,6 +1,6 @@
 # Test
 
-Testing out Every Languages
+Testing out Every Languages with simplest form (with available methods)
 
 ### [Bash (Unix Shell Script)](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) ![Bash Logo](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAYFBMVEX////S1NWcoKO9wMHs7e3Lzc7j5OSYnJ/5+fqtsLLHycqkp6nz8/O1uLpwdnlXX2Pu7++NkZRTW2BeZWlaYmZhaGzc3d52fH99g4aqra5KVFhnbnJfY2thcmZgh1dgkk+oxRIWAAAAvklEQVR4AWKgDgDQSRcJDIQwAABXcStBq/9/ZX0dTsigSdqu6ys0dGPTINwWiFBKvh3Gh72NHZq6gsrtiZvDtmf39HAQn/cd7L1+/HcYOmxUmlfQnCy4CkrnvC9jiNr7MpJOg69h1FBFYSEmqKLLqI6qP9cxmvaywTAuCGpM19vN6zkzGM14wex6f3h9IRM2lJLpzvYEt6vtyK5Evgjeg07oUFzog947XyoymQmxYDkplp/h8jKfWGDxGvGJHAArfwzz0/k2xAAAAABJRU5ErkJggg==)
 
