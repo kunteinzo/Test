@@ -4,7 +4,7 @@ root=~/Projects/Test
 
 main() {
     echo
-    echo -e "Run A Program"
+    echo -e "\033[0;33mRun A Program\033[0m"
     echo
     select i in C C++ Java Kotlin PHP Python Exit
     do
