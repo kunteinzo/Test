@@ -1,0 +1,2 @@
+Main-Class: com.mykotlin.MainKt
+Class-Path: lib/gson-2.12.1.jar
