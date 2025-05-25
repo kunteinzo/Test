@@ -43,11 +43,15 @@ mjs() {
 
 mkt() {
     cd $root/kotlin
-    rm -rf app.jar classes > /dev/null 2>&1
+    #rm -rf app.jar classes > /dev/null 2>&1
+    #shopt -s globstar
+    #kotlinc src/**/*.kt -include-runtime -cp $(ls -d lib/*.jar | tr "\n" ":") -d classes -Xallow-no-source-files
+    #shopt -u globstar
+    #jar cfm app.jar manifest.txt -C classes . -C lib .
+    #kotlin app.jar
+    
     shopt -s globstar
-    kotlinc src/**/*.kt -include-runtime -cp $(ls -d lib/*.jar | tr "\n" ":") -d classes -Xallow-no-source-files
-    shopt -u globstar
-    jar cfm app.jar manifest.txt -C classes . -C lib .
+    kotlinc src/**/*.kt -include-runtime -d app.jar
     kotlin app.jar
     exit
 }
