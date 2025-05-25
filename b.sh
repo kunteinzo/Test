@@ -6,10 +6,15 @@ main() {
     echo
     echo -e "\033[0;33mRun A Program\033[0m"
     echo
-    select i in C C++ Java JavaScript Kotlin PHP Python Exit
+    select i in Bash C C++ Java JavaScript Kotlin PHP Python Exit
     do
         echo
         case $i in
+            Bash) 
+                cd $root/bash
+                ./app.sh
+                exit
+            ;;
             C) 
                 cd $root/clang
                 rm app
