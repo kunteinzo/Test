@@ -6,7 +6,7 @@ main() {
     echo
     echo -e "\033[0;33mRun A Program\033[0m"
     echo
-    select i in C C++ Java Kotlin PHP Python Exit
+    select i in C C++ Java JavaScript Kotlin PHP Python Exit
     do
         echo
         case $i in
@@ -32,6 +32,11 @@ main() {
                 shopt -u globstar
                 jar cfm app.jar manifest.txt -C classes .
                 java -jar app.jar
+                exit
+            ;;
+            JavaScript)
+                cd $root/javascript
+                node app.js
                 exit
             ;;
             Kotlin) 
