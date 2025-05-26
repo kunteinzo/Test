@@ -27,7 +27,8 @@ It stands out in terms of portability, interoperability, efficiency, and stabili
 
 ### 6. [JavaScript](https://en.m.wikipedia.org/wiki/JavaScript)
 
-&emsp;&emsp;JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. Ninety-nine percent of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code. 
+&emsp;&emsp;JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. Ninety-nine percent of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.
+
 ### 7. [Kotlin](https://kotlinlang.org/)
 
 &emsp;&emsp;Kotlin is a cross-platform, statically typed, general-purpose high-level programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.

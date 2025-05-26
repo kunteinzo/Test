@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# for Termux and Linux
 root=~/Projects/Test
 
 mbash() {
