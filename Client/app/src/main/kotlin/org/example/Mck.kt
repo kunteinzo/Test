@@ -19,7 +19,7 @@ import javax.crypto.spec.PSource
 import javax.crypto.spec.SecretKeySpec
 
 class Mck {
-    private val AES_ALGO = "AES_256/GCM/NoPadding"
+    private val AES_ALGO = "AES/GCM/NoPadding"
     private val RSA_ALGO = "RSA/ECB/OAEPwithSHA-512andMGF1Padding"
     
     fun enc(data: ByteArray): String = Base64.getEncoder().encodeToString(data)
