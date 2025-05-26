@@ -3,6 +3,7 @@
 */.venv
 
 *.xlsx
+*.exe
 
 clang/app
 cpp/app
