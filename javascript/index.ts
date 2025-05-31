@@ -1,8 +1,4 @@
-import postgres from 'postgres';
-import * as dotenv from 'dotenv';
-
-dotenv.config();
-
+import postgres from 'postgres'
 
 const sql = postgres({
   host: process.env.DATABASE_HOST,
@@ -10,4 +6,4 @@ const sql = postgres({
   username: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
   ssl: 'require',
-});
+})
