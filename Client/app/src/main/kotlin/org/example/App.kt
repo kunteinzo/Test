@@ -3,7 +3,18 @@
  */
 package org.example
 
+import java.sql.*
+import java.util.Properties;
+
 
 fun main() {
     println("Hi")
+    // JDBC_URI=jdbc:postgresql://ep-aged-band-a2pyf1rt.eu-central-1.pg.koyeb.app/koyebdb?user=koyeb-adm&password=npg_P2BrQg8sSLUc
+    val url = "jdbc:postgresql://ep-aged-band-a2pyf1rt.eu-central-1.pg.koyeb.app/koyebdb?user=koyeb-adm&password=npg_P2BrQg8sSLUc"
+    val properties = Properties()
+    props.setProperty("user", "koyeb-adm")
+    props.setProperty("password", "npg_P2BrQg8sSLUc")
+    props.setProperty("ssl", "true")
+    val connection = DriverManager.getConnection(url)
+    
 }
